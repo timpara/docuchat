@@ -2,7 +2,7 @@ import os
 import tempfile
 import streamlit as st
 from streamlit_chat import message
-from rag import ChatPDF
+from rag import ChatDocument
 
 st.set_page_config(page_title="Document Chatbot")
 
@@ -54,7 +54,7 @@ def read_and_save_file():
 def page():
     if len(st.session_state) == 0:
         st.session_state["messages"] = []
-        st.session_state["assistant"] = ChatPDF()
+        st.session_state["assistant"] = ChatDocument()
 
     st.header("Document Chatbot")
 

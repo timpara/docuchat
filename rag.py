@@ -9,7 +9,7 @@ from langchain.prompts import PromptTemplate
 from langchain.vectorstores.utils import filter_complex_metadata
 
 
-class ChatPDF:
+class ChatDocument:
     vector_store = None
     retriever = None
     chain = None
